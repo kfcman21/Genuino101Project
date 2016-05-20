@@ -21,11 +21,11 @@ void loop()
   lcd.setCursor(0,1);
   lcd.print(hum);
   delay(1000);
-  if(hum <40 ) {
-    digitalWrite(7, HIGH);
+  if(hum>40 ) {
+    digitalWrite(7, LOW);
     delay(10000);
      } else {
-    digitalWrite(7, LOW);
+    digitalWrite(7, HIGH);
     delay(500);  
     }
   }
